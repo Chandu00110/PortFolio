@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a006f97368.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo">
+            <span style="color: #ff004f; font-size: 80px">C</span>HANDU
+          </h1>
+          <ul id="sidemenu">
+            <li onclick="closemenu()"><a href="#header">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>SoftWare Developer</p>
+          <h1>
+            Hi, I'm <span style="color: #ff004f">Chandra Shekhar</span>
+            <br />From Hyderabad
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------about --------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="Images/IMG_20241002_104432-removebg-preview.png"
+              style="margin-top: -30%"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Motivated and detail-oriented Application Developer eager to apply
+              technical skills and educational background in contributing to the
+              design, development, and configuration of applications that meet
+              business needs. Seeking an opportunity in a challenging and
+              collaborative environment to grow and enhance my skills.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />
+                  Java, JSP, Servlets, Python, C#, DotNet
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  HTML, CSS, JavaScript, Bootstrap
+                </li>
+                <li>
+                  <span>Software Development</span><br />
+                  Eclipse IDE, MySQL, VS Code, Git
+                </li>
+                <li>
+                  <span>Soft Skills</span><br />
+                  Problem Solving, Strong Communication, Leadership, Team
+                  Collaboration
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Intern 2024 - Current</span><br />
+                  Vaaradhi Web & IT Services
+                  <ul>
+                    <li class="listInside">
+                      Collaborating on .NET projects, contributing to web-based
+                      solution development.
+                    </li>
+                    <li class="listInside">
+                      Assisting in coding, debugging, and testing phases of the
+                      software development lifecycle.
+                    </li>
+                    <span>Key responsibilities</span>
+                    <li class="listInside responsibilities">
+                      Design and develop scalable web applications using ASP.NET
+                      Core and Blazor frameworks.
+                    </li>
+                    <li class="listInside responsibilities">
+                      Implement user interface components and features using
+                      Blazor for interactive and responsive web applications.
+                    </li>
+                    <li class="listInside responsibilities">
+                      Work with databases (PostgresSQL Server, Entity Framework)
+                      to manage data storage and retrieval.
+                    </li>
+                    <li class="listInside responsibilities">
+                      Collaborate with front-end developers to integrate
+                      user-facing elements with server-side logic.
+                    </li>
+                    <li class="listInside responsibilities">
+                      Troubleshoot and resolve issues related to application
+                      performance and user experience.
+                    </li>
+                    <li class="listInside responsibilities">
+                      Write unit and integration tests to ensure code quality
+                      and functionality.
+                    </li>
+                    <li class="listInside responsibilities">
+                      Participate in code reviews and contribute to best
+                      practices in software development.
+                    </li>
+                    <li class="listInside responsibilities">
+                      Stay up to date with the latest industry trends and
+                      technologies in .NET development.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-24</span><br />AVN Institute of Engineering and
+                  Technology
+                </li>
+                <li><span>2018-20</span><br />Narayana jr College</li>
+                <li><span>2018</span><br />Raghava High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------Services --------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-user-graduate"></i>
+            <h2>Student Management System</h2>
+            <p>
+              Developed a web-based platform for student management using HTML,
+              CSS, Java, and JSP, allowing efficient tracking and reporting of
+              student records.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-syringe"></i>
+            <h2>Immunize Guide</h2>
+            <p>
+              Designed and implemented a web application using HTML, CSS,
+              Bootstrap, JSP, and MySQL that sends alerts for future vaccination
+              dates based on user data.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-seedling"></i>
+            <h2>Soil Moisture Retrieval using Groundwater Dataset</h2>
+            <p>
+              Led a major project that utilized Python to analyze groundwater
+              data for determining soil moisture levels, aiding in better
+              agricultural planning.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------portfolio--------------------------- -->
+    <div id="portfolio">  
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/StudentManagementSystem.jpg" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from the play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/ImmunizeGuide2.jpg" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from the play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/SoilMoisture.jpg" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from the play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ---------------------Contact me--------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>chandhupepakayala@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+91 9381109642</p>
+            <div class="social-icons">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter-square"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a
+              href="Images/CHANDRA SHEKHAR PEPAKAYALA.pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------Copy Right--------------------------- -->
+    <div class="copyright">
+      <p>Copyright © Chandu. Made with ❤️</p>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-links");
+        }
+        for (tabconts of tabcontents) {
+          tabconts.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxwiszaWeliBBJdxde7NPtMs0mKizOtSDJHo_56jpXkrlH2eYAfwvXkYeSeuvhAqdcE/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
